@@ -1,0 +1,42 @@
+{
+  "countries": ["USA", "UK", "France", "USSR", "China", "Switzerland", "Germany"],
+  "years": [1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945],
+  "entries": {
+    "USA": {
+      "1933": {
+        "Key": "FDR came in office and begins mass spending",
+        "message": 
+        "<p>Following the failure of Herbert Hoover during the great depression, Franklin D. Roosevelt came into office. He immediately established the Emergency Banking Act and then the Glass-Steagall Act which stabilized the banking system by closing insolvent banks and restoring public confidence and established the Federal Deposit Insurance which ensures each deposit account with up to $250 000 with Federal money.</p>\n<p>The Agricultural Adjustment Act (AAA) Aimed to raise farm prices by reducing agricultural surpluses. </p>\n<p>National Industrial Recovery Act (NIRA) Created the National Recovery Administration (NRA) to regulate industries and promote fair competition. </p>\n<p>Civilian Conservation Corps (CCC) Provided construction work for young people.</p>"
+      },
+      "1934": {
+        "Key": "FDR's New Deal continues",
+        "message": "Securities and Exchange Commission (SEC) Regulated the stock market to prevent fraud.<p>\n</p>Works Progress Administration (WPA) Employed millions of people in public works projects.<p>\n</p>Indian Reorganization Act (IRA) Reversed the Dawes Act and encouraged Native American self-government.<p>\n</p>The Gold Reserve Act nationalized gold holdings, devalued the dollar by 40%, and abandoned the gold standard domestically. This boosted exports by making U.S. goods cheaper abroad."
+      },
+      "1935": {
+        "Key": "Continued state intervention in the economy",
+        "message": "Social Security Act: Established a federal system of pensions and unemployment insurance.<p>\n</p>Wagner Act  Guaranteed workers' rights to collective bargaining and strengthened labor unions."
+      },
+      "1936": {
+        "Key": "FDR wins a second term",
+        "message": "FDR wins a second term in office. The New Deal is still in full swing, federal spending doubled compared to 1932 levels"
+      },
+      "1941": {
+        "Key": "The Pearl Harbor, The US enters WW2",
+        "message": "Entered WW2 following the Japanese attack on Pearl Harbor<p>\n</p>War Production Board (WPB) Directed the conversion of industries to war production.<p>\n</p>Federal spending more than tripled compared to 1932, equalling 12% US GDP that year<p>\n</p>The Lend Lease Act, passed by the U.S. Congress, provided military aid to the allies, primarily the UK, the USSR, and China."
+      },
+      "1942": {
+        "Key": "Full wartime mobilization after entering WWII (1941)",
+        "message": "The U.S. shifted to a full war economy following its 1941 entry into WWII.<p>\n</p>Federal spending surged to $34 billion, a 7.4x increase over 1932 levels.<p>\n</p>The War Production Board (WPB) converted civilian industries (e.g., auto plants) to military production.<p>\n</p>The Office of Price Administration (OPA) imposed price controls, rent freezes, and rationing (e.g., gasoline, rubber).<p>\n</p>The Revenue Act of 1942 expanded taxes to 75 million Americans and introduced payroll withholding.<p>\n</p>The Manhattan Project launched in 1942 but received most funding in later years.<p>\n</p>Unemployment dropped to 4.7% as labor mobilized, including women and marginalized groups.<p>\n</p>The Lend-Lease Program supplied allies with $36 billion in equipment, boosting industrial demand.<p>\n</p>Corporate profits soared via 'cost-plus' government contracts, despite rationing and wage controls."
+      },
+      "1943": {
+        "Key": "War production peaks"
+      },
+      "1944": {
+        "Key": "The Bretton Woods Conference",
+        "message": "Bretton Woods Conference: 44 Allied nations during World War II, held in Bretton Woods, New Hampshire, USA, far from the center of politics and the attention of the media. Aimed at stabilising the post-war international economic system to prevent the financial instability that had contributed to the Great Depression and the war. Key outcomes included:<p>\n</><p>\n</>1. Creation of the IMF (International Monetary Fund): To oversee global monetary stability and provide financial assistance to countries in crisis.<p>\n</>2. Creation of the IBRD (International Bank of Reconstruction and Development): What is to expand into the World Bank, funded post-war reconstruction and development projects.<p>\n</>3. Bretton Woods System: Established fixed exchange rates tied to the US dollar, which was pegged to gold, ensuring stability and preventing competitive devaluations.<p>\n</>Federal spending equals 40% GDP this year<p>\n</><p>\n</><p>\n</>The GI Bill<p>\n</>1. Education and Training: Veterans could receive tuition coverage for college, vocational schools with a monthly living stipend to cover expenses while attending school.of veterans to pursue higher education or job training. Over 2 million veterans used the education benefits.<p>\n</>2. Home Loan Guarantees: The bill provided low-interest mortgages with no down payment required.<p>\n</>3. Unemployment Benefits: $20 per week in unemployment benefits for up to one year.<p>\n</>4. Job Placement Assistance"
+      }
+    },
+    "UK": {
+    }
+  }
+}

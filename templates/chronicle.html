@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Chronicle{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/chronicle.css') }}">
+{% endblock %}
+
+{% block content %}
+    <style>
+        .chronicle {
+            display: grid;
+        }
+    </style>
+
+    <div class="chronicle" style="grid-template-columns: 100px repeat({{ countries|length }}, 1fr)">
+        <!-- First empty entry -->
+        <div style="grid-row: 1; grid-column: 1;"></div>
+
+        {% for country in countries %}
+            <!-- Fixes the row and loops the columns for country labels -->
+            <div class="country-header" 
+                style="grid-row: 1; grid-column: {{ loop.index + 1 }};">
+                {{ country }}
+            </div>
+        {% endfor %}
+
+    {% for year in years %}
+        <!-- Year label -->
+        <div class="year-label" 
+            style="grid-row: {{ loop.index + 1 }}; grid-column: 1;">
+            {{ year }}
+        </div>
+        {% set year_index = loop.index %}
+
+        {% for country in countries %}
+            {% set entry = entries.get(country, {}).get(year|string, None) %}
+            <div class="cell" 
+                style="grid-row: {{ year_index + 1 }}; grid-column: {{ loop.index + 1 }};"
+                data-country="{{ country }}" 
+                data-year="{{ year }}"
+                data-key="{{ entry.Key | safe if entry and entry.Key else 'Default Key for ' ~ country ~ ' (' ~ year|string ~ ')' | e }}"
+                data-message="{{ entry.message | safe if entry and entry.message else 'Default message for ' ~ country ~ ' in ' ~ year|string ~ '.' | e }}">
+                {{ entry.Key if entry else "—" }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    </div>
+    
+    <!-- Modal Popup - updated close button -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close" aria-label="Close">&times;</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-message"></p>
+            <p id="modal-info"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chronicle.js') }}"></script>
+{% endblock %}

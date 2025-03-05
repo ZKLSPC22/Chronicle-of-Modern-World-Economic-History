@@ -1,0 +1,39 @@
+:root {
+    --header-height: 40px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex; /* Enable flex layout for body */
+}
+
+.toolbar {
+    width: 150px;
+    min-width: 150px;
+    background: #f0f0f0;
+    padding: 40px;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+/* Ensure links in headings have proper spacing */
+.toolbar h3 a {
+    display: block;
+    margin: -10px; /* Compensate for h3 default padding */
+    padding: 10px;
+}
+
+.content {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center; /* Ensure text alignment matches flex centering */
+    width: 100%; /* Take full width of content area */
+}

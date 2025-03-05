@@ -1,0 +1,87 @@
+.chronicle {
+  display: grid;
+  gap: 2px;
+  overflow: auto;
+  padding: 20px;
+}
+
+/* Correct selector - z-index adjusted */
+.chronicle > div:first-child {
+  background: #f0f0f0;
+  height: var(--header-height);
+  position: sticky;
+  left: 0;
+  z-index: 10;
+}
+
+.cell {
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  min-height: 60px;
+  min-width: 150px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  background: white;
+}
+
+.cell:hover {
+  outline: 3px solid #2196F3;
+  z-index: 15;
+  transform: scale(1.02);
+}
+
+.country-header {
+  background: #e0e0e0;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 11;  /* Increased from 10 */
+}
+
+.year-label {
+  background: #f0f0f0;
+  padding: 10px;
+  position: sticky;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Modal Styles - updated */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;  /* Added for centering */
+  align-items: center;      /* Added for centering */
+}
+
+.modal-content {
+background: white;
+padding: 20px;
+width: 70%;
+border-radius: 5px;
+position: relative;
+margin: auto;  /* Changed from fixed margin */
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+cursor: pointer;
+}
+
+.close:hover {
+color: black;
+}

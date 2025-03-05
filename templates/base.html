@@ -1,0 +1,30 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div class="toolbar">
+        <h3>Toolbar</h3>
+        <ul>
+            <li><a href="{{ url_for('index') }}" class="toolbar-button">Home</a></li>
+            <li><a href="{{ url_for('chronicle') }}" class="toolbar-button">Chronicle</a></li>
+            <li>A bit about me</li>
+            <li>Contacts</li>
+        </ul>
+        <h3><a href="{{ url_for('my_analysis') }}" class="toolbar-button">My analysis</a></h3>
+        <ul>
+            <li>The rise of the US</li>
+            <li>Neoliberalism</li>
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
